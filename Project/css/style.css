@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.main__container {
+  display: flex;
+  justify-content: center;
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__content > * {
+  margin: 5px;
+}
+.main__time {
+  font-size: 20px;
+  padding: 10px;
+}
+.main__inputs > * {
+  background: #fac;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
+}
+@media (max-width: 700px) {
+  .main__inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main__content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

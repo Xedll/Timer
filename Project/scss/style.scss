@@ -1,0 +1,64 @@
+@import "resetStyle.scss";
+.wrapper {
+}
+.main {
+
+		&__container {
+         display: flex;
+         justify-content: center;
+		}
+
+		&__content {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         &>*{
+            margin: 5px;
+         }
+		}
+
+		&__time {
+         font-size: 20px;
+         padding: 10px;
+		}  
+
+		&__inputs {
+         &>* {
+            background: #fac;
+            margin: 2px;
+            padding: 5px;
+            border-radius: 10px;
+         }
+     
+		}
+
+		&__hour {
+		}
+
+		&__minutes {
+		}
+
+		&__seconds {
+		}
+}
+
+
+._container {
+}
+
+@media (max-width:700px) {
+   .main {
+      &__inputs{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         margin: 0 auto;
+      }
+      &__content{
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+      }
+   }
+}
