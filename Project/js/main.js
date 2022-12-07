@@ -36,7 +36,8 @@ document.querySelector('.main__buttonSet').onclick = () => {
          i.value *= -1;
       }
    }
-   count++
+   count > 1 ? count : count++;
+
    time = Math.ceil(+inputs[0].value) * 3600 + Math.ceil(+inputs[1].value) * 60 + Math.ceil(+inputs[2].value);
 }
 
@@ -45,7 +46,9 @@ document.querySelector('.main__buttonStop').onclick = () => {
       i.value = '';
    }
    document.title = "Timer";
-   count--;
+   console.log(count)
+   count < 1 ? count : count--;
+   console.log(count)
    time = 0;
    signal.pause()
 }
